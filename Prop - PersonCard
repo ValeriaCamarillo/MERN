@@ -1,0 +1,48 @@
+APP.JSX:
+import logo from './logo.svg';
+import './App.css';
+import PersonCard from './components/PersonCard';
+
+function App() {
+  return (
+   < PersonCard/>
+   
+  );
+  }
+
+export default App;
+
+
+
+PERSONCARD.JSX
+import React, { Component } from 'react'
+
+class PersonCard extends Component {
+  render() {
+    return (
+      <>
+      <div>
+        <h1>Doe, Jane</h1>
+        <h2>Age: 45</h2>
+        <h3>Hair Color: Black</h3>
+      </div>
+      <div>
+        <h1>Smith, John</h1>
+        <h2>Age: 88</h2>
+        <h3>Hair Color: Gray</h3>
+      </div>
+      <div>
+        <h1>Fillmore, Millard</h1>
+        <h2>Age: 50</h2>
+        <h3>Hair Color: Brown</h3>
+      </div>
+      <div>
+        <h1>Smith, Maria</h1>
+        <h2>Age: 62</h2>
+        <h3>Hair Color: Brown</h3>
+      </div>
+      </>
+    )
+  }
+}
+export default PersonCard;
